@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>To Do's</title>
+    <link href="https://fonts.googleapis.com/css?family=Squada+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/todos.css">
+</head>
+
+<body onload="init()">
+    <div class="container grid">
+        <h1>TO DO's</h1>
+
+        <div class="filter-container">
+            Filter By:
+            <select onchange="onSetFilter(this.value)">
+                <option>All</option>
+                <option>Active</option>
+                <option>Done</option>
+            </select>
+            Sort By:
+            <select>
+                <option>Importance</option>
+                <option>Creation</option>
+                <option>Text</option>
+            </select>
+        </div>
+
+        <ul class="todo-list"></ul>
+        <p class="stat">
+            Total todos:
+            <span class="total-count"></span>
+            Active:
+            <span class="active-count"></span>
+        </p>
+        <h3>Add todo</h3>
+        <div class="add-container">
+            <input type="text" placeholder="What needs to be done?" />
+            <select id="importance-select">
+                <option value="">Select Importance</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+            <button class="add-btn" onclick="onAddTodo()">Add</button>
+        </div>
+    </div>
+
+
+    <script src="js/todo-service.js"></script>
+    <script src="js/todo-controller.js"></script>
+</body>
+
+</html>

@@ -21,6 +21,7 @@ function renderContent(user) {
     htmlStr += `<p>this content is very safe, dont trust anyone with that information</p>`;
     if(user.isAdmin) {
         htmlStr += `<a href="admin.html" target="_blank">Admin panel</a> `
+        htmlStr += `<a href="todos.html" target="_blank">Todos List</a> `
     }
     htmlStr += `<button onclick="onLogout()">Log out</button>`;
     contentBox.innerHTML = htmlStr;

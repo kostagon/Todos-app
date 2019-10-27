@@ -1,0 +1,78 @@
+/* Base */
+
+* {
+    font-family: 'Squada One', cursive;
+}
+
+*::selection {
+    color: black;
+    background-color: red;
+}
+
+
+body {
+    text-align: center;
+    color: white;
+    background-color: #000;
+}
+
+h1,h2,h3,h4,h5 {
+    color: orange;
+}
+
+select,
+input {
+    margin: 0 auto;
+    width: 10vw;
+    padding: 7px;
+    border-radius: 10px;
+}
+
+input:focus,select:focus {
+    outline: 0;
+}
+
+button {
+    background-color: transparent;
+    border: 2px solid white;
+    color: red;
+    border-radius: 999px;
+}
+
+button:active {
+    background-color: orange;
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Main */
+
+
+.todo-list {
+    padding: 10px;
+    list-style: none;
+}
+
+.filter-container {
+    padding: 10px;
+}
+
+.add-btn {
+    color: greenyellow;
+}
+
+/* Helpers */
+
+.done {
+    text-decoration: line-through
+}
+
+.stat span {
+    color: orange;
+}
+
+.grid {
+    display: grid;
+}
