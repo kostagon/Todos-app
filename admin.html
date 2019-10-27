@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Admin panel</title>
+    <link href="https://fonts.googleapis.com/css?family=Squada+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body onload="checkIfAdmin()">
+    <h1>Welcome to admin panel</h1>
+    <select onchange="onSetSort(this.value)">
+        <option value="">Sort by:</option>
+        <option value="name">Name</option>
+        <option value="last-login">Last login</option>
+    </select><br/><br/>
+    <div class="users-table"></div>
+    <script src="js/util.js"></script>
+    <script src="js/user-service.js"></script>
+    <script src="js/admin-service.js"></script>
+    <script src="js/admin-controller.js"></script>
+</body>
+</html>

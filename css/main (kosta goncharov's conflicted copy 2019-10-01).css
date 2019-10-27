@@ -1,0 +1,42 @@
+*::selection{
+    background-color: red;
+    color: black;
+}
+
+body{
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    box-sizing: content-box;
+}
+h1{
+    font: 24px;
+}
+
+button{
+    background-color: white;
+}
+
+input, button{
+    text-align: center;
+    margin: 7px;
+    padding: 4px;
+}
+
+table{
+    margin: 0 auto;
+    border: 1px solid white;
+}
+
+td{
+    background-color: grey;
+    padding: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+.admin-content {
+    color: white;
+}

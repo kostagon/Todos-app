@@ -1,0 +1,49 @@
+* {
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-family: 'Squada One', cursive;
+}
+
+*::selection {
+    color: black;
+    background-color: red;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+input, button {
+    padding: 9px;
+    border: 1px solid white;
+}
+button:hover, a:hover {
+    border-color: #7099dc;
+}
+
+table {
+    margin: 0 auto;
+    border: 1px solid white;
+}
+
+td{
+    color: grey;
+    padding: 7px;
+}
+
+select {
+    padding: 4px;
+}
+
+a, button{
+    font-size: 1em;
+    text-decoration: none;
+    padding: 7px;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
