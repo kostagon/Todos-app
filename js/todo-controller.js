@@ -7,6 +7,7 @@ function init() {
 function renderTodos() {
     var todos = getTodosToShow();
     var strHTMLs = todos.map(function (todo) {
+        // creates a list of Todos with a className of done if its the case.
         var className = (todo.isDone)? 'done' : '';
         return `<li onclick="onToggleTodo(this, ${todo.id})" class="${className}">
                     ${todo.txt}
